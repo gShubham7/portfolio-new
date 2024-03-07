@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomeBannerStyle.css";
 import cartoon from "../images/cartoon-compressed.png";
+import Resume from "../assets/Shubham-Gaikwad-Resume.pdf";
 
 export default function HomeBanner({ id }) {
   return (
@@ -17,7 +18,18 @@ export default function HomeBanner({ id }) {
               <span>Developer</span>
             </li>
           </ul>
-          <a className="btn" href="-" target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn"
+            href={Resume}
+            download={"Shubham-Gaikwad-Resume.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1dqWN-ijwhgKZgq6OCQ0pkEiEgzDf2yVL/view?usp=sharing"
+              )
+            }
+          >
             Resume
           </a>
         </div>
