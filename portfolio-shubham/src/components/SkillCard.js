@@ -6,6 +6,9 @@ import {
   SiReact,
   SiPostman,
   SiPycharm,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import {
   TbBrandCss3,
@@ -46,6 +49,15 @@ export default function SkillCard({ id }) {
             </abbr>
             <abbr title="CSS 3">
               <TbBrandCss3 className="techLogo" />
+            </abbr>
+            <abbr title="NodeJS">
+              <SiNodedotjs className="techLogo" />
+            </abbr>
+            <abbr title="ExpressJS">
+              <SiExpress className="techLogo" />
+            </abbr>
+            <abbr title="MongoDB">
+              <SiMongodb className="techLogo" />
             </abbr>
             <abbr title="Git/Github">
               <DiGit className="techLogo" />
